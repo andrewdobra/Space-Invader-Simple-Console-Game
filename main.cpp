@@ -194,11 +194,11 @@ void game_dif(int dif)
 void game_head()
 {
     int dif,i,j; GO=0; GW=0;
-    cout<<"Bun venit in lumea Space Invader, daca doriti sa jucati alegeti dificultatea."<<endl;
-    cout<<"Apasati 1,2 sau 3 in functie de cat de greu doriti sa fie jocul iar apoi apasati tasta Enter."<<endl;
-    cout<<"1:Usor"<<endl;
-    cout<<"2:Mediu"<<endl;
-    cout<<"3:Greu"<<endl;
+    cout<<"Welcome to the Space Invader world, in order to start the game choose a difficulty."<<endl;
+    cout<<"Press 1, 2 or 3 and then Enter in order to pick a difficulty."<<endl;
+    cout<<"1:Easy"<<endl;
+    cout<<"2:Medium"<<endl;
+    cout<<"3:Hard"<<endl;
     cin>>dif;
     for(i=1;i<=40;i++)
         for(j=1;j<=31;j++)
@@ -213,10 +213,10 @@ int main()
     HWND hwnd=GetConsoleWindow();
     if(hwnd !=NULL) MoveWindow(hwnd,200,300,700,600,TRUE);
     game_head();
-    if(GO==1&&GW==0) cout<<"Ai pierdut, apasa tasta 1 ca sa incerci din nou.";
-    else if(GO==1&&GW==1) cout<<"Remiza, apasa tasta 1 ca sa incerci din nou.";
-    else if(GO==0&&GW==1) cout<<"Ai castigat! Daca doresti sa joci din nou apasa tasta 1.";
-    cout<<endl<<"Apasa tasta 2 pentru a iesi din joc.";
+    if(GO==1&&GW==0) cout<<"You lost. Press 1 to play again.";
+    else if(GO==1&&GW==1) cout<<"It's a draw. Press 1 to play again.";
+    else if(GO==0&&GW==1) cout<<"You won! Press 1 if you wish to play again.";
+    cout<<endl<<"Press 2 to exit the game.";
     int again;
     cin>>again;
     if(again==1) game_head();
