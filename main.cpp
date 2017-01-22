@@ -209,7 +209,7 @@ void game_head()
 
 int main()
 {
-    system("color 17");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),0x17);
     HWND hwnd=GetConsoleWindow();
     if(hwnd !=NULL) MoveWindow(hwnd,200,300,700,600,TRUE);
     game_head();
