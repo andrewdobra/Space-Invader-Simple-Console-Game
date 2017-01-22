@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1485095507 source:g:\c++ projects\space invader\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	<conio.h>
+	<time.h>
+
